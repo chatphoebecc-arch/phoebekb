@@ -1,0 +1,59 @@
+:root{
+  --bg: #FAF9F6;
+  --ink: #1C1B1A;
+  --ink-soft: #55524C;
+  --accent: #3F6659;
+  --accent-soft: #E8EEEA;
+  --line: #DEDAD1;
+}
+
+body{
+  background: var(--bg) !important;
+  color: var(--ink) !important;
+  font-family: 'Inter', 'Noto Sans SC', sans-serif !important;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Noto Serif SC', serif !important;
+  color: var(--ink) !important;
+}
+
+.sidebar{
+  background: var(--bg) !important;
+  border-right: 1px solid var(--line) !important;
+}
+.sidebar ul li a{
+  color: var(--ink-soft) !important;
+  font-size: 14px;
+}
+.sidebar ul li a.active{
+  color: var(--accent) !important;
+  font-weight: 600;
+  border-right: 2px solid var(--accent);
+}
+.sidebar-nav{ padding-top: 24px; }
+
+.markdown-section{
+  max-width: 760px;
+}
+.markdown-section a{ color: var(--accent); }
+.markdown-section code{
+  background: var(--accent-soft);
+  color: var(--ink);
+}
+.markdown-section pre{
+  background: #F1F0EC;
+}
+.markdown-section blockquote{
+  border-left-color: var(--accent);
+}
+
+.search input{
+  border: 1px solid var(--line) !important;
+}
+
+.app-name-link{
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 13px !important;
+  color: var(--ink) !important;
+}
